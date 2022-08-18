@@ -5,12 +5,13 @@ graph TD;
 classDef mixerclass fill:blue,stroke:white,stroke-width:2px;
 classDef synthclass fill:purple,stroke:black,stroke-width:1px,color:black;
 classDef soundclass fill:yellow,stroke:black,stroke-width:2px,color:black;
+classDef fxclass fill:green,stroke:black,stroke-width:1px,color:black;
 subgraph Sub-Mixing
 B(MicroMonsta2):::synthclass --- slotm9((9L)):::mixerclass --> A(Yamaha MG10);
 B(MicroMonsta2) --- slotm10((10R)):::mixerclass --> A(Yamaha MG10);
 C(Volca Keys):::synthclass --- slotm1((1)):::mixerclass --> A(Yamaha MG10);
-D(Neutron):::synthclass --- slotm2((2)):::mixerclass --> A(Yamaha MG10);
-E(Crave):::synthclass --- slotm3((3)):::mixerclass --> A(Yamaha MG10);
+D(Neutron):::synthclass --- fx2(multi):::fxclass --- slotm2((2)):::mixerclass --> A(Yamaha MG10);
+E(Crave):::synthclass --- fx1(reverb):::fxclass --- slotm3((3)):::mixerclass --> A(Yamaha MG10);
 F(Microphone) --- slotm4((4)):::mixerclass --> A(Yamaha MG10);
 G(ext.sources) --- slotm7((7L)):::mixerclass --> A(Yamaha MG10);
 G(ext.sources) --- slotm8((8R)):::mixerclass --> A(Yamaha MG10);
