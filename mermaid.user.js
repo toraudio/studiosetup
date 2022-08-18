@@ -5,7 +5,7 @@
 // @author          toraudio <github at nullzehn dot net>
 // @description     Enable `Mermaid diagrams` on github wiki and markdown files
 // @homepage        https://github.com/Redisrupt/mermaid-diagrams
-// @updateURL       https://github.com/toraudio/studiosetup/main/raw/mermaid.user.js
+// @updateURL       https://raw.githubusercontent.com/toraudio/studiosetup/main/mermaid.user.js
 // @match           https://*.visualstudio.com/*
 // @match           https://dev.azure.com/*
 // @match           https://github.com/*
