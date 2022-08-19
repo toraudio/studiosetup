@@ -29,7 +29,7 @@ K(Blackbox):::synthclass --- fx3(TResonator-L):::fxclass --- slot3((3L)):::sound
 K(Blackbox):::synthclass --- fx4(TResonator-R):::fxclass --- slot4((4R)):::soundclass --> Z(AudioInterface UMC-22);
 end
 subgraph Monitoring
-Z(AudioInterface UMC-22) --> mon1((Rockit L));
-Z(AudioInterface UMC-22) --> mon2((Rockit R));
+Z(AudioInterface UMC-22) --> mon1((Rokit5 L));
+Z(AudioInterface UMC-22) --> mon2((Rokit5 R));
 end
 ``` 
