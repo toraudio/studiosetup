@@ -18,7 +18,7 @@ G(ext.sources) --- slotm7((7L)):::mixerclass --> A(Yamaha MG10);
 G(ext.sources) --- slotm8((8R)):::mixerclass --> A(Yamaha MG10);
 end
 L{DAW}:::daw --- intern((USB internal routing)):::soundclass --> Z(AudioInterface UMC-22);
-subgraph Main-Mixing
+subgraph Main
 A(Yamaha MG10) --- slot1((1L)):::soundclass --> Z(AudioInterface UMC-22):::soundclass;
 A(Yamaha MG10) --- slot2((2R)):::soundclass --> Z(AudioInterface UMC-22);
 H(Model Cycle):::synthclass --- slot7((7L)):::soundclass --> Z(AudioInterface UMC-22);
